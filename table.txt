@@ -1,0 +1,40 @@
+import mysql.connector
+db = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    passwd="Password@123",
+    database="luminar",
+    auth_plugin='mysql_native_password'
+
+)
+
+cursor = db.cursor()
+cursor.execute("DROP TABLE IF EXISTS Employee")
+sql="""import mysql.connector
+db = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    passwd="Password@123",
+    database="luminar",
+    auth_plugin='mysql_native_password'
+
+)
+
+cursor = db.cursor()
+cursor.execute("DROP TABLE IF EXISTS Employee")
+sql=""create table employee(eid varchar(20),name varchar(20),design varchar(50),mail varchar(100),salary varchar(50))"""
+try:
+    cursor.execute(sql)
+except Exception as e:
+    print(e.args)
+
+db.close()
+
+(1))"""
+try:
+    cursor.execute(sql)
+except Exception as e:
+    print(e.args)
+
+db.close()
+
